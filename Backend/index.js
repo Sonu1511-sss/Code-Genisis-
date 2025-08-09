@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
-require('dotenv').config();
-require('./src/Config/database').dbConnect();
+require('dotenv').config(); // Load .env before anything else
+require('./src/Config/database').dbConnect(); // Connect DB
 
 const aiRoutes = require('./src/routes/ai.route');
 const AuthRoutes = require('./src/routes/authRoutes');
@@ -18,7 +18,8 @@ app.use(express.json());
 
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://codegenesis.vercel.app', // change if needed
+  'http://localhost:5000',
+  // 'https://your-frontend-domain.com', // change to your frontend
 ];
 
 app.use(cors({
