@@ -16,7 +16,7 @@ const Documentation = () => {
       <div className="gallery-container">
 
         <div className="gallery-itemss tall dark-1">
-          <p className='gallery-text'><span className='gal-title'>Overview : </span>CodeEcho is a full-stack MERN application that leverages the power of Gemini AI to empower developers with a suite of intelligent coding tools. Designed to simplify and accelerate software development workflows, CodeEcho brings together an intuitive frontend with a powerful backend and intelligent AI-driven features</p>
+          <p className='gallery-text'><span className='gal-title'>Overview : </span>Code-Genisis is a full-stack MERN application that leverages the power of Gemini AI to empower developers with a suite of intelligent coding tools. Designed to simplify and accelerate software development workflows, Code-Genisis brings together an intuitive frontend with a powerful backend and intelligent AI-driven features</p>
         </div>
 
 
@@ -35,8 +35,8 @@ const Documentation = () => {
             Contacts : 
           </p>
           <div className="gallery-logo">
-            <div onClick={() => window.open("https://github.com/Tanishk-0x ") }><RxGithubLogo /></div>
-            <div onClick={() => window.open("https://www.linkedin.com/in/tanishk-namdev") }><RxLinkedinLogo /></div>
+            <div onClick={() => window.open("https://github.com/Sonu1511-sss ") }><RxGithubLogo /></div>
+            <div onClick={() => window.open("https://www.linkedin.com/in/shubham-uprade-092542278/") }><RxLinkedinLogo /></div>
           </div>
         </div>
 
@@ -44,9 +44,9 @@ const Documentation = () => {
           <p className="gal-title">
             Author & Maintainer : 
           </p>
-          <p>Project Owner : Tanishk (Computer Science B.Tech)</p>
-          <p>For feedback, suggestions, contact: [codeecho19@gmail.com]</p>
-          <p>Personal : tanishknamdev981@gmail.com</p>
+          <p>Project Owner : Shubham/Chandrabhan (Computer Science B.Tech)</p>
+          <p>For feedback, suggestions, contact: [codegenisis@gmail.com]</p>
+          <p>Personal : Shubhamuprade0@gmail.com</p>
         </div>
 
         <div className="gallery-itemss tall gray-2">
@@ -88,7 +88,7 @@ const Documentation = () => {
         <div className="gallery-itemss wide light-2">
           <p className="gallery-text">
             <span className='gal-title'>AI Integration : </span>
-            CodeEcho is powered by Google’s Gemini API, enabling high-quality AI analysis across multiple programming languages. Each feature leverages natural language prompts to return precise, contextual results within seconds
+            Code-Genisis is powered by Google’s Gemini API, enabling high-quality AI analysis across multiple programming languages. Each feature leverages natural language prompts to return precise, contextual results within seconds
           </p>
         </div>
 

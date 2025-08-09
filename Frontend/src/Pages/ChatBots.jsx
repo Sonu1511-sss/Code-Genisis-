@@ -19,7 +19,7 @@ const ChatBots = () => {
         <div className="card-header">
             <div className="card-title">
                 <p className='card-p'>ChatEase</p>
-                <p className='card-by'>By CodeEcho</p>
+                <p className='card-by'>By Code-Genisis</p>
             </div>
             <div className="card-round">
                 <p>Get expert answers instantly—one chatbot for every subject, all in one place.</p>

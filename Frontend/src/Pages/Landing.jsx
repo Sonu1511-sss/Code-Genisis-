@@ -227,16 +227,16 @@ const Landing = () => {
 
         <div className="texts-outer">
           <div className="text-round">
-            <p><span><SiGooglegemini /></span> Gemini x CodeEcho: Dev Revolution</p>
+            <p><span><SiGooglegemini /></span> Gemini x Code-Genisis: Dev Revolution</p>
           </div>
           <div className="intro">
             <p>AI-Driven Coding<span> Companion</span></p>
           </div>
           <div className="tagline">
-            <p>Transform complex code into clear insights with CodeEcho's intelligent AI tools.</p>
+            <p>Transform complex code into clear insights with Code-Genisis's intelligent AI tools.</p>
           </div>
           <div className="para">
-            <p>CodeEcho is your intelligent coding companion that brings clarity and ease to development</p>
+            <p>Code-Genisis is your intelligent coding companion that brings clarity and ease to development</p>
           </div>
           <div className="landing-btn">
           <input type="text" placeholder='type a message' onChange={(e) => setMessage(e.target.value)} value={message}/>
@@ -313,7 +313,7 @@ const Landing = () => {
 
 
       <section className="why-us-section">
-        <h2 className="why-title">Why CodeEcho</h2>
+        <h2 className="why-title">Why Code-Genisis</h2>
         
         <div className="why-cards">
           {features.map((item, index) => (
@@ -348,7 +348,7 @@ const Landing = () => {
 
       <div className="text-wrapper">
         <div className="shadow-dance-container">
-            <h1 className="shadow-dance-text">CodeEcho</h1>
+            <h1 className="shadow-dance-text">Code-Genisis</h1>
         </div>
       </div>
 

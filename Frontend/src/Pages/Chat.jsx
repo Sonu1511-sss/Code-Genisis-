@@ -31,7 +31,7 @@ const Chat = () => {
 
   const [chartcontent , setChartContent] = useState(`
     flowchart TD
-    A[CodeEcho]
+    A[Code-Genisis]
 
   `); 
   const [tempchart , setTempChart] = useState('') ; 
@@ -129,7 +129,7 @@ const Chat = () => {
       <header className="chat-header">
         <div className="chat-title">
           <p className='chat-p'> ChatBot</p>
-          <p className='chat-by'>By CodeEcho</p>
+          <p className='chat-by'>By Code-Genisis</p>
         </div>
         <div className="chat-text">
           <p>Heyy! I am expert in {topic} ask me anything about this topic</p>

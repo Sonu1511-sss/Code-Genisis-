@@ -13,17 +13,17 @@ const Footer = () => {
       <div className="footer-content">
 
         <div className="footer-left">
-          <h3>Boost your coding workflow smartly <br /> with <span>CodeEcho.</span></h3>
+          <h3>Boost your coding workflow smartly <br /> with <span>Code-Genisis.</span></h3>
         </div>
 
         <div className="footer-right">
           <div className="footer-contact">
             <FaEnvelope className="footer-icon" />
-            <p>codeecho19@gmail.com</p>
+            <p>Code-Genisis@gmail.com</p>
           </div>
           <div className="footer-contact">
             
-            <p className="footer-copy">© CodeEcho 2025, All Rights Reserved</p>
+            <p className="footer-copy">© Code-Genisis 2025, All Rights Reserved</p>
           </div>
         </div>
       </div>
@@ -39,8 +39,8 @@ const Footer = () => {
         </div>
 
         <div className='footer-logo'>
-            <span onClick={() => window.open("https://github.com/Tanishk-0x ") }><FaGithub /></span>
-            <span onClick={() => window.open("https://www.linkedin.com/in/tanishk-namdev") }><ImLinkedin /></span>
+            <span onClick={() => window.open("https://github.com/Sonu1511-sss ") }><FaGithub /></span>
+            <span onClick={() => window.open("https://www.linkedin.com/in/shubham-uprade-092542278/") }><ImLinkedin /></span>
         </div>
         
       </div>
