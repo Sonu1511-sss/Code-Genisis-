@@ -1,26 +1,24 @@
-const express = require('express') ; 
-const aiRoutes = require('./src/routes/ai.route')  ; 
-const cors = require('cors') ; 
-const app = express() ; 
-const AuthRoutes = require('./src/routes/authRoutes') ; 
-const authMiddleware = require('./src/Middlewares/authMiddleware');
-const UserRoutes = require('./src/routes/user') ; 
-const cookieParser = require('cookie-parser') ; 
-const meRoutes = require('./src/routes/meRoutes') ; 
-const userProfileRoutes = require('./src/routes/userProfileRoute') ; 
-require('dotenv').config() ; 
-require('./src/Config/database').dbConnect() ; 
+const express = require('express');
+const cors = require('cors');
+const cookieParser = require('cookie-parser');
+require('dotenv').config();
+require('./src/Config/database').dbConnect();
 
+const aiRoutes = require('./src/routes/ai.route');
+const AuthRoutes = require('./src/routes/authRoutes');
+const UserRoutes = require('./src/routes/user');
+const meRoutes = require('./src/routes/meRoutes');
+const userProfileRoutes = require('./src/routes/userProfileRoute');
 
-const PORT = process.env.PORT ; 
+const app = express();
+const PORT = process.env.PORT || 5000;
 
-
-// MiddleWares 
-app.use(express.json()) ; 
+// Middleware
+app.use(express.json());
 
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://codeecho.vercel.app', // to change 
+  'https://codegenesis.vercel.app', // change if needed
 ];
 
 app.use(cors({
@@ -34,29 +32,23 @@ app.use(cors({
   credentials: true,
 }));
 
-// cookie parser 
-app.use(cookieParser()) ; 
+app.use(cookieParser());
 
+// Default route
+app.get('/', (req, res) => {
+  res.send('Hello World from CodeGenesis!');
+});
 
-// default route 
-app.get('/' , (req , res) => {
-    res.send('Hello World!')
-}) ; 
+// Routes
+app.use('/ai', aiRoutes);
+app.use('/auth', AuthRoutes);
+app.use('/user', UserRoutes);
+app.use('/check', meRoutes);
+app.use('/profile', userProfileRoutes);
 
+// Start server
+app.listen(PORT, () => {
+  console.log(`🚀 Server started at http://localhost:${PORT}`);
+});
 
-// -- mounting -- 
-app.use('/ai' , aiRoutes) ; 
-app.use('/auth' , AuthRoutes) ;
-app.use('/user' , UserRoutes) ; 
-app.use('/check' , meRoutes) ; 
-app.use('/profile' , userProfileRoutes) ; 
-
-
-// -- app starts --
-app.listen(PORT , () => {
-    console.log(`Server Started SuccessFully At Port No : ${PORT} `) ; 
-})
-
-
-module.exports = app ; 
-
+module.exports = app;
