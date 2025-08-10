@@ -166,7 +166,7 @@ const Landing = () => {
 <div className="nav-logo">
   <img 
     src="..\public\Logo-img.png" 
-    alt="Code-Genisis Logo" 
+    alt="Code-Genisis" 
     className="h-[19rem] w-auto object-contain" 
   />
 </div>
