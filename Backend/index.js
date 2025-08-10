@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
-require('dotenv').config(); // Load .env before anything else
+require('dotenv').config(); // Load .env first
 require('./src/Config/database').dbConnect(); // Connect DB
 
 const aiRoutes = require('./src/routes/ai.route');
@@ -13,14 +13,17 @@ const userProfileRoutes = require('./src/routes/userProfileRoute');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// ✅ Define allowed origins for CORS
+const allowedOrigins = [
+  'http://localhost:3000',
+  'http://127.0.0.1:3000',
+  // Add your frontend/deployed URL here if needed
+];
+
 // Middleware
 app.use(express.json());
 
-const allowedOrigins = [
-  'https://code-genisis-front.vercel.app/',
-  'https://code-genisis-back.onrender.com/',
-];
-
+// ✅ CORS setup
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
@@ -33,6 +36,17 @@ app.use(cors({
 }));
 
 app.use(cookieParser());
+
+// ✅ Sanitize Authorization header (fix Postman newline/space issues)
+app.use((req, res, next) => {
+  if (req.headers.authorization) {
+    req.headers.authorization = req.headers.authorization
+      .toString()
+      .trim()
+      .replace(/[\r\n]+/g, ''); // remove hidden newlines
+  }
+  next();
+});
 
 // Default route
 app.get('/', (req, res) => {
