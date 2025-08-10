@@ -38,7 +38,7 @@ const SignUp = () => {
         try {
             setloading(true) ; 
             // ---- Api Calling ----
-            const res = await axios.post("https://codeechobackend.onrender.com/auth/signup" , formData) ; 
+            const res = await axios.post("https://code-genisis-back.onrender.com/auth/signup" , formData) ; 
             setMessage(res.data.message) ; 
             console.log(message) ; 
             console.log(res) ; 
@@ -49,7 +49,7 @@ const SignUp = () => {
             // }, 2000);
 
             // ---- Api calling ----
-                const lgres = await axios.post("https://codeechobackend.onrender.com/auth/login" , formData , {
+                const lgres = await axios.post("https://code-genisis-back.onrender.com/auth/login" , formData , {
                     withCredentials : true , //accessing cookies 
                 });
                 setMessage(lgres.data.message) ; 

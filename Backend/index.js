@@ -18,7 +18,7 @@ app.use(express.json());
 
 const allowedOrigins = [
   'https://code-genisis-front.vercel.app/',
-  'https://code-genisis.vercel.app/',
+  'https://code-genisis-back.onrender.com/',
 ];
 
 app.use(cors({

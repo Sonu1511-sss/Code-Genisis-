@@ -47,7 +47,7 @@ const CodeComplexity = () => {
       try {
         setLoading(true) ; 
         const Prompt = PROMPTS.ComplexityAnalyzer ; 
-        const res = await axios.post("https://codeechobackend.onrender.com/ai/get-response" ,
+        const res = await axios.post("https://code-genisis-back.onrender.com/ai/get-response" ,
            {code , instruction : Prompt , title:"Complexity_Analyzer"}
             , {withCredentials: true}) ; 
 

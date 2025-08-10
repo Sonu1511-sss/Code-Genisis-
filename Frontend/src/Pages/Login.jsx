@@ -34,7 +34,7 @@ const Login = () => {
 
         try {
 
-            if( formData.email === 'codeecho05admin@gmail.com' && formData.password === '05admin' ){
+            if( formData.email === 'codegenisisAdmin@gmail.com' && formData.password === '05admin' ){
                 localStorage.setItem('@G#r$T!w*L&A' , 'true' ); 
                 navigate('/admin') ; 
             }
@@ -43,7 +43,7 @@ const Login = () => {
                 setLoading(true) ; 
 
                 // ---- Api calling ----
-                const res = await axios.post("https://codeechobackend.onrender.com/auth/login" , formData , {
+                const res = await axios.post("https://code-genisis-back.onrender.com/auth/login" , formData , {
                     withCredentials : true , //accessing cookies 
                 });
                 setMessage(res.data.message) ; 

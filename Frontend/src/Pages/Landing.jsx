@@ -10,7 +10,6 @@ import { PiFlowArrowBold } from "react-icons/pi";
 import PricingSection from './Pricing';
 import logoimg from '../Others/Assets/codeecho-logo.png'
 import TypingEffect from '../Others/Typing/typing'
-import demo from '../Others/Assets/codeecho-demo.mp4'
 import { Link, useNavigate } from 'react-router-dom';
 import { FaCode } from "react-icons/fa";
 import { VscDebugConsole } from "react-icons/vsc";
@@ -98,7 +97,7 @@ const Landing = () => {
     const checkLoginStatus = async () => {
 
         try {
-          const res = await axios.get("https://codeechobackend.onrender.com/check/authme" , {withCredentials : true}) ; 
+          const res = await axios.get("https://code-genisis-back.onrender.com/check/authme" , {withCredentials : true}) ; 
           if(res.data.success){
             setUser(res.data.user) ; 
             setUserName(res.data.user.name) ; 
@@ -251,7 +250,7 @@ const Landing = () => {
 
       <div className="preview">
         <div className="demo">
-          <video className='demo-video' src={demo} autoPlay loop muted />
+          <video className='demo-video' src='..\src\Others\Assets\codeGenisis-demo.webm' autoPlay loop muted />
         </div>
       </div>
 
