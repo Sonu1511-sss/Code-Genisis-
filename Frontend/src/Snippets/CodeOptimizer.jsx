@@ -121,7 +121,7 @@ const CodeOptimizer = () => {
       <header className="op-header">
         <div className="opt-title">
           <p className="opt-p">Code Optimizer</p>
-          <p className="opt-by">By CodeEcho</p>
+          <p className="opt-by">By Code-Genisis</p>
         </div>
         <div className="opt-controls">
           <div className="loader">

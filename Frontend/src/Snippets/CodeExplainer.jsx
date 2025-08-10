@@ -115,7 +115,7 @@ const CodeExplainer = () => {
       <header className="ex-header">
         <div className="ex-title">
           <p className='ex-p'>Code Explainer</p>
-          <p className='ex-by'>By CodeEcho</p>
+          <p className='ex-by'>By Code-Genisis</p>
         </div>
 
         <div className="ex-controls">

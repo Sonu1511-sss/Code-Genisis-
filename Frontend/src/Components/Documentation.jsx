@@ -9,7 +9,7 @@ const Documentation = () => {
   return (
     <div className="gallery-wrapper">
       <header className="gallery-header">
-        <h1><span>About</span> CodeEcho</h1>
+        <h1><span>About</span> Code-Genisis</h1>
         <p>A multi-featured AI platform designed to decode complexity, enhance productivity</p>
       </header>
 

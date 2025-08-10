@@ -62,7 +62,7 @@ const CodeConverter = () => {
         <header className="conv-header">
             <div className="by">
                 <h1>Language Convertor</h1>
-                <p>By CodeEcho</p>
+                <p>By Code-Genisis</p>
             </div>
 
             <div className="conv-actions">

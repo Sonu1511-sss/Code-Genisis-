@@ -164,11 +164,13 @@ const Landing = () => {
     <div className="landing-main">
       
       <header className="navbar">
-
-        <div className="nav-logo">
-          <img src={logoimg} alt="CodeEcho" />
-        </div>
-
+<div className="nav-logo">
+  <img 
+    src="..\public\Logo-img.png" 
+    alt="CodeEcho" 
+    className="h-[19rem] w-auto object-contain" 
+  />
+</div>
         <div className='nav-round'>
           <div> Go beyond the syntax to unlock real understanding </div>
         </div>

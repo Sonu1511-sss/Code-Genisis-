@@ -95,7 +95,7 @@ const TopicExplainer = () => {
       <header className="top-header">
         <div className="top-title">
           <p className='top-p'>Topic Explainer</p>
-          <p className='top-by'>By CodeEcho</p>
+          <p className='top-by'>By Code-Genisis</p>
         </div>
         <div className="top-controls">
           {

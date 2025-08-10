@@ -102,7 +102,7 @@ const CodeReviewer = () => {
       <header className="review-header">
         <div className="ex-title rev-title">
           <p className='ex-p rev-p'>Code Reviewer</p>
-          <p className='ex-by rev-by'>By CodeEcho</p>
+          <p className='ex-by rev-by'>By Code-Genisis</p>
         </div>
         <div className="review-controls">
           {

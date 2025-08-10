@@ -82,7 +82,7 @@ const CodeComplexity = () => {
       <header className="comp-header">
         <div className="by">
           <h1>Complexity Analyzer</h1>
-          <p>By CodeEcho</p>
+          <p>By Code-Genisis</p>
         </div>
         <div className="comp-btn">
           <div className="comp-loader">

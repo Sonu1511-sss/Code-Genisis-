@@ -94,7 +94,7 @@ const CodeComment = () => {
 
         <div className="by">
           <h1>Comment Generator</h1>
-          <p>By CodeEcho</p>
+          <p>By Code-Genisis</p>
         </div>
         
 

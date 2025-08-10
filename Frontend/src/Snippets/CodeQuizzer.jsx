@@ -106,7 +106,7 @@ const CodeQuizzer = () => {
       <header className="q-header">
         <div className="q-title">
           <p className="q-p">Code Quizzer</p>
-          <p className="q-by">By CodeEcho</p>
+          <p className="q-by">By Code-Genisis</p>
         </div>
         <div className="q-controls">
 
