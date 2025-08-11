@@ -8,7 +8,8 @@ import { VscOpenPreview } from "react-icons/vsc";
 import { IoBulb } from "react-icons/io5";
 import { PiFlowArrowBold } from "react-icons/pi";
 import PricingSection from './Pricing';
-import logoimg from '../Others/Assets/codeecho-logo.png'
+import logoimg from '../Others/Assets/Logo-img.png';
+import demoVideo from '../Others/Assets/codeGenisis-demo.webm';
 import TypingEffect from '../Others/Typing/typing'
 import { Link, useNavigate } from 'react-router-dom';
 import { FaCode } from "react-icons/fa";
@@ -165,7 +166,7 @@ const Landing = () => {
       <header className="navbar">
 <div className="nav-logo">
   <img 
-    src="..\public\Logo-img.png" 
+    src={logoimg} 
     alt="Code-Genisis" 
     className="h-[19rem] w-auto object-contain" 
   />
@@ -248,11 +249,12 @@ const Landing = () => {
 
       </div>
 
-      <div className="preview">
-        <div className="demo">
-          <video className='demo-video' src='..\src\Others\Assets\codeGenisis-demo.webm' autoPlay loop muted />
-        </div>
-      </div>
+     
+<div className="preview">
+  <div className="demo">
+    <video className="demo-video" src={demoVideo} autoPlay loop muted />
+  </div>
+</div>
 
       <div className="features-section">
 
